@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,37 +15,44 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>homework-05</title>
+    <title>Get-a-pair2.0</title>
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        <h1 class="title-game">Гра "Знайдіть пару2.0"</h1>
-      </div>
-    </header>
-
     <section class="start-page">
       <div class="container">
+        <h1 class="title-game">Гра "Знайдіть пару2.0"</h1>
         <p class="start-text">
           Щоб розпочати, оберіть тему. Або введіть власну, та натисніть
           "Розпочати".
         </p>
         <ul class="list-teme">
-          <li class="choice-teme">Автомобілі</li>
-          <li class="choice-teme">Мотоцикли</li>
-          <li class="choice-teme">Аніме</li>
-          <li class="choice-teme">Природа</li>
-          <li class="choice-teme">Собаки</li>
-          <li class="choice-teme">Коти</li>
-          <li class="choice-teme">Архітектура</li>
-          <li class="choice-teme">Зброя</li>
-          <li class="choice-teme">Наука</li>
+          <li class="choice-teme" data-value="cars">Автомобілі</li>
+          <li class="choice-teme" data-value="motorcycles">Мотоцикли</li>
+          <li class="choice-teme" data-value="anime">Аніме</li>
+          <li class="choice-teme" data-value="landscapes">Природа</li>
+          <li class="choice-teme" data-value="dogs">Собаки</li>
+          <li class="choice-teme" data-value="cats">Коти</li>
+          <li class="choice-teme" data-value="architecture">Архітектура</li>
+          <li class="choice-teme" data-value="cinema">Кіно</li>
+          <li class="choice-teme" data-value="science">Наука</li>
         </ul>
         <form class="enter-teme">
-          <input type="text" name="teme" />
-          <button class="btn-start" type="button">Розпочати</button>
+          <input
+            title="Для кращого результату вводьте запит на англійській."
+            class="inp-teme"
+            type="text"
+            name="teme"
+            placeholder="Введіть власну тему..."
+          />
+          <button class="btn-start" type="submit">Розпочати</button>
         </form>
+      </div>
+    </section>
+
+    <section class="game-page">
+      <div class="container">
+        <ul class="game-gallery"></ul>
       </div>
     </section>
 
